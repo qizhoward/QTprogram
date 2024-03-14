@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <selectedon>:/Resource/Resource/main/icon.ico</selectedon>
+    <selectedon>:/Resource/main/icon.ico</selectedon>
    </iconset>
   </property>
   <property name="styleSheet">
