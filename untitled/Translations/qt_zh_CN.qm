@@ -1,0 +1,1 @@
+quitAction = new QAction(tr("quit"), this);
