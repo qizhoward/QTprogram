@@ -1,5 +1,9 @@
-QT       += core gui
-QT += 3dcore 3drender 3dextras
+QT       += core gui opengl
+QT += 3dcore 3drender 3dextras 3dinput 3dlogic
+INCLUDEPATH += C:\Qt\6.6.2\mingw_64\include\QtOpenGLWidgets
+INCLUDEPATH += C:\Qt\6.6.2\mingw_64\bin
+LIBS += "C:\Qt\6.6.2\mingw_64\bin\Qt6OpenGLWidgets.dll"
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -9,25 +13,38 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    OpenGLWidget.cpp \
     about.cpp \
     dialog.cpp \
+    gridwindow.cpp \
+    layer.cpp \
+    layerdelegate.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    selectionwidget.cpp \
+    setting.cpp \
+    windows.cpp
 
 HEADERS += \
+    OpenGLWidget.h \
     about.h \
     dialog.h \
-    mainwindow.h
+    gridwindow.h \
+    layer.h \
+    layerdelegate.h \
+    mainwindow.h \
+    selectionwidget.h \
+    setting.h \
+    windows.h
 
 FORMS += \
     about.ui \
     dialog.ui \
-    mainwindow.ui
+    layer.ui \
+    mainwindow.ui \
+    setting.ui \
+    windows.ui
 
-TRANSLATIONS += \
-    untitled_zh_CN.ts
-CONFIG += lrelease
-CONFIG += embed_translations
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -37,4 +54,16 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     main.qrc
 
-DISTFILES +=
+DISTFILES += \
+    Translations/qt_zh_CN.qm \
+    qt_zh_CN.ts
+TRANSLATIONS += qt_zh_CN.ts
+
+LIBS += -lopengl32 -luser32
+
+
+
+win32: LIBS += -L$$PWD/lib/lib-mingw-w64/ -lglfw3dll
+
+INCLUDEPATH += $$PWD/lib/include
+DEPENDPATH += $$PWD/lib/include

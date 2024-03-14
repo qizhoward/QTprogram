@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/Resource">
+    <qresource prefix="/">
         <file>Resource/main/AngleSnapToggle_24.png</file>
         <file>Resource/main/AngleSnapToggle_30.png</file>
         <file>Resource/main/AngleSnapToggle_36.png</file>
@@ -16,6 +16,7 @@
         <file>Resource/main/Group_30.png</file>
         <file>Resource/main/Group_36.png</file>
         <file>Resource/main/Group_48.png</file>
+        <file>Resource/main/heart.png</file>
         <file>Resource/main/icon.ico</file>
         <file>Resource/main/KeyboardOverrideToggle_24.png</file>
         <file>Resource/main/KeyboardOverrideToggle_30.png</file>
@@ -93,5 +94,32 @@
         <file>Resource/main/UniformScale_30.png</file>
         <file>Resource/main/UniformScale_36.png</file>
         <file>Resource/main/UniformScale_48.png</file>
+        <file>Resource/Layer/Closed_16.png</file>
+        <file>Resource/Layer/Closed_20.png</file>
+        <file>Resource/Layer/Closed_24.png</file>
+        <file>Resource/Layer/Closed_32.png</file>
+        <file>Resource/Layer/CreateNewLayer_24.png</file>
+        <file>Resource/Layer/CreateNewLayer_30.png</file>
+        <file>Resource/Layer/CreateNewLayer_36.png</file>
+        <file>Resource/Layer/CreateNewLayer_48.png</file>
+        <file>Resource/Layer/Layers_16.png</file>
+        <file>Resource/Layer/Layers_20.png</file>
+        <file>Resource/Layer/Layers_24.png</file>
+        <file>Resource/Layer/Layers_30.png</file>
+        <file>Resource/Layer/Layers_32.png</file>
+        <file>Resource/Layer/Layers_36.png</file>
+        <file>Resource/Layer/Layers_48.png</file>
+        <file>Resource/Layer/Opened_16.png</file>
+        <file>Resource/Layer/Opened_20.png</file>
+        <file>Resource/Layer/Opened_24.png</file>
+        <file>Resource/Layer/Opened_32.png</file>
+        <file>Resource/Layer/ble_on_16.png</file>
+        <file>Resource/Layer/ble_on_20.png</file>
+        <file>Resource/Layer/ble_on_24.png</file>
+        <file>Resource/Layer/ble_on_32.png</file>
+        <file>Resource/Layer/ble_off_16.png</file>
+        <file>Resource/Layer/ble_off_20.png</file>
+        <file>Resource/Layer/ble_off_24.png</file>
+        <file>Resource/Layer/ble_off_32.png</file>
     </qresource>
 </RCC>

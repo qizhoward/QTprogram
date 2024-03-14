@@ -27,7 +27,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="General">
     <attribute name="title">
@@ -323,6 +323,9 @@
      <width>481</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
